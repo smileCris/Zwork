@@ -1,9 +1,9 @@
 let leftBg = document.getElementsByClassName('left');
 let array = new Array('url(./image/pic1.png)', 'url(./image/pic2.png)', 'url(./image/pic3.png)');
 let list = document.getElementById('desc').getElementsByTagName('li');
+let i = 0;
 
 let nextMove = function () {
-    let i = 0;
     i += 1;
     if (i >= list.length) {
         i = 0;
