@@ -17,3 +17,15 @@ var nextMove = function () {
     }
 };
 setInterval(nextMove, 3000);
+
+var loginTest = function () {
+    var user = document.getElementById('username').value;
+    var pwd = document.getElementById('password').value;
+    console.log(pwd.length);
+    if((user != "") && (pwd.length >= 6)) {
+        alert("登录成功，你好 " + user);
+    }
+    else {
+        alert("登录失败，用户名不能为空且密码不能少于6位数");
+    }
+}
