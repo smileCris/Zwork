@@ -67,6 +67,12 @@ body {
     font-size: 25px;
     font-weight: 400;
 }
+.right > form > #alert {
+    width: 80%;
+    color: #dbe18c;
+    font-size: 13px;
+    display: none;
+}
 .right > form > input {
     width: 55%;
     height: 25px;
@@ -101,19 +107,28 @@ body {
     margin-left: -20%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 480px) {
     .left,.left > * {
         display: none;
     }
     .right {
         border-radius: 10px;
     }
+    .right > form > #alert {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .main {
+        height: 350px;
         margin-top: 100px;
-        height: 300px;
+    }
+    .left,.left > * {
+        display: none;
+    }
+    .right {
+        border-radius: 10px;
     }
     .right > form {
         margin: 0 10%;
